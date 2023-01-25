@@ -10,7 +10,7 @@ public class Pedido {
 
     }
 
-    private EnviarEmails enviar;
+    final private EnviarEmails enviar = EnviarEmails.obterDadosEmails();
 
     public void gravarInformacoes(){
         this.enviar.retornar("Pedido criado!!");
