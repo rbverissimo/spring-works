@@ -12,4 +12,9 @@ public class AppConfig {
     }
     //A interpretação da annotation se fosse em XML seria tal qual a abaixo:
     // <bean id="livro" class="br.com.dio.estudobeans.Livro"/>
+
+    @Bean
+    public AutorLivro getAutorLivro(){
+        return new Autor();
+    }
 }
