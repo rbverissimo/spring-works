@@ -13,7 +13,6 @@ public class Pedido {
     private EnviarEmails enviar;
 
     public void gravarInformacoes(){
-        this.enviar = new EnviarEmails("stmp", "contato@dio.com.br", "123456");
         this.enviar.retornar("Pedido criado!!");
     }
 }
